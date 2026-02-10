@@ -123,9 +123,7 @@ const RepresentativeQuiz = () => {
             <p className="text-gray-600 font-bold">{currentRep.party}</p>
             <p className="text-gray-400 text-sm">{currentRep.state} — District {currentRep.district}</p>
           </div>
-        ) : (
-          <p className="text-gray-300 font-bold italic">To which party do they belong?</p>
-        )}
+        ) : null}
       </div>
 
       {/* Controls */}
