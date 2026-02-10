@@ -91,15 +91,15 @@ const RepresentativeQuiz = () => {
       {/* HUD */}
       <div className="w-full grid grid-cols-3 gap-1 mb-6 px-2 font-mono font-bold">
         <div className="flex flex-col items-start">
-          <span className="text-gray-400 text-[10px] uppercase">Accuracy</span>
-          <span className="text-indigo-600 text-sm">{correctCount} / {totalGuesses} ({calculatePercent()}%)</span>
+          <span className="text-gray-400 text-[10px] uppercase">Accuracy: </span>
+          <span className="text-indigo-600 text-sm">{correctCount}/{totalGuesses} ({calculatePercent()}%)</span>
         </div>
         <div className="flex flex-col items-center text-orange-500">
-          <span className="text-gray-400 text-[10px] uppercase">Streak</span>
-          <span>{streak} 🔥</span>
+          <span className="text-gray-400 text-[10px] uppercase">Streak: </span>
+          <span>{streak}</span>
         </div>
         <div className="flex flex-col items-end text-blue-500">
-          <span className="text-gray-400 text-[10px] uppercase">Remaining</span>
+          <span className="text-gray-400 text-[10px] uppercase">Remaining: </span>
           <span>{pool.length}</span>
         </div>
       </div>
@@ -124,7 +124,7 @@ const RepresentativeQuiz = () => {
             <p className="text-gray-400 text-sm">{currentRep.state} — District {currentRep.district}</p>
           </div>
         ) : (
-          <p className="text-gray-300 font-bold italic">Who is this?</p>
+          <p className="text-gray-300 font-bold italic">To which party do they belong?</p>
         )}
       </div>
 
